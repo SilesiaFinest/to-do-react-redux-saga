@@ -6,7 +6,8 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #3a2e39;
+  background-color: #cce6f4;
+  text-align: center;
 }
 
 /* Color CheatSheet:
@@ -14,4 +15,17 @@ body {
 Midinight Green: 1E555C
 *Unbleached silk: F4D8CD
 Middle yellow red: EDB183
-*Red salsa: F15152 */
+*Red salsa: F15152
+
+Columbia blue: CCE6F4
+Maximum Blue: 4BA3C3
+Blue sapphire: 175676
+Bright maroon: AE2D47
+Crimson: D62839
+Cultured: F9F8F8 - items bcgr
+Viridian green: 119DA4 - item border
+*/
+
+a {
+  text-emphasis: none;
+}
