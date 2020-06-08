@@ -1,9 +1,10 @@
 import React from "react";
+
 import styled from "styled-components";
 
 const Title = styled.h1`
-  color: #175676;
-  padding: 0.8em;
+  color: #080357;
+  padding: 0.4em;
   text-transform: uppercase;
   font-size: 3em;
   font-weight: 900;

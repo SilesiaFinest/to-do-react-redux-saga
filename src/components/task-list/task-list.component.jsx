@@ -1,17 +1,37 @@
 import React from "react";
+import { connect } from "react-redux";
+
 import styled from "styled-components";
 
+import TaskItem from "../task-item/task-item.component";
+import Loading from "../loading/loading.component";
+
 const StyledTaskList = styled.div`
-  background-color: #f9f8f8;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px 40px;
+  background-color: #fafac6;
+  border-radius: 20px;
 `;
 
-const TaskList = () => (
+const TaskList = ({ todos, isPending, error }) => (
   <StyledTaskList>
-    <p>all tasks</p>
-    <p>to be displayed here</p>
+    {isPending ? (
+      <Loading />
+    ) : error ? (
+      "Error loading resources. Please try again"
+    ) : todos.length === 0 ? (
+      "Congratulations! You've completed them all!"
+    ) : (
+      todos.map((todo) => <TaskItem key={todo.id} item={todo} />)
+    )}
   </StyledTaskList>
 );
 
-export default TaskList;
+const mapStateToProps = ({ todos: { todos, isPending, error } }) => ({
+  todos,
+  isPending,
+  error,
+});
+
+export default connect(mapStateToProps)(TaskList);

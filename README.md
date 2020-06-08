@@ -1,23 +1,36 @@
+# ToDo App
+
+## Table of contents:
+
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+
+## General info
+
+This project is a ToDo list app using async state management and API calls
+
+## Technologies:
+
+- React 16.13.1
+- Redux 4.0.5
+- Redux-Saga 1.1.3
+- Styled-Components 5.1.1
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Libs used:
-
-- React
-- Redux
-- Redux-Saga
-- Styled-Components
-
-## Available Scripts
+## Setup
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all dependencies and node modules
 
 ### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 
